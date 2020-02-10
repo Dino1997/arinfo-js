@@ -1,3 +1,27 @@
+var identbutton = document.getElementById("imagebutton");
+var imag = document.getElementById("contentimage");
+var runtext = function() {
+  if (imag.getAttribute("src") === "./images/magicarpe.png") {
+    imag.setAttribute("src", "./images/léviator.png");
+  }
+  // else if (imag.getAttribute("src") === "./images/pikachu.png") {
+  //   imag.setAttribute("src", "./images/raichu.png");
+  // }
+  else {
+    imag.setAttribute("src", "./images/magicarpe.png");
+  }
+};
+identbutton.addEventListener("click", runtext);
+
+var button = document.getElementById("random");
+var h3 = document.getElementById("h3");
+function getRandominit() {
+  h3.textContent = Math.floor(Math.random() * Math.floor(3));
+}
+button.addEventListener("click", function() {
+  getRandominit();
+});
+
 //  image changeante //
 
 var imgm = document.querySelector(".ciseaux");
@@ -16,45 +40,45 @@ var scorecomputer = document.querySelector(".scorecomputer");
 var scorecomputernumber = 0;
 
 imgm.addEventListener("click", function() {
-  imgmove.setAttribute("src", "./images/ciseaux.png");
+  imgmove.setAttribute("src", "./images/ciseaux.jpg");
   mychoice = "Ciseaux";
   console.log(mychoice);
   random();
-  mychoicetxt.textContent = "はさみ";
+  mychoicetxt.textContent = "Ciseaux";
   resultat();
   scorehumanf();
 });
 console.log(imgm);
 imgg.addEventListener("click", function() {
-  imgmove.setAttribute("src", "./images/feuille.png");
+  imgmove.setAttribute("src", "./images/feuille.jpg");
   mychoice = "Feuille";
   console.log(mychoice);
   random();
-  mychoicetxt.textContent = "シート";
+  mychoicetxt.textContent = "Feuille";
   resultat();
   scorehumanf();
 });
 imgb.addEventListener("click", function() {
-  imgmove.setAttribute("src", "./images/pierre.png");
+  imgmove.setAttribute("src", "./images/pierre.jpg");
   mychoice = "Pierre";
   console.log(mychoice);
   random();
-  mychoicetxt.textContent = "ロダン";
+  mychoicetxt.textContent = "Pierre";
   resultat();
   scorehumanf();
 });
 
 function random() {
   var tableau = [
-    "./images/ciseaux.png",
-    "./images/feuille.png",
-    "./images/pierre.png"
+    "./images/ciseaux.jpg",
+    "./images/feuille.jpg",
+    "./images/pierre.jpg"
   ];
   var randomnum = Math.floor(Math.random() * Math.floor(3));
   imgrandom.setAttribute("src", tableau[randomnum]);
   mycomputerchoice = ["Ciseaux", "Feuille", "Pierre"][randomnum];
   console.log(mycomputerchoice);
-  randomchoicetxt.textContent = ["はさみ", "シート", "ロダン"][randomnum];
+  randomchoicetxt.textContent = ["Ciseaux", "Feuille", "Pierre"][randomnum];
 }
 
 function resultat() {

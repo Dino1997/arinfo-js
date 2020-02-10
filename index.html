@@ -8,29 +8,53 @@
     <title>Document</title>
   </head>
   <body>
-    <img id="contentimage" src="./images/magicarpe.png" alt="magicarpe" />
-    <button id="imagebutton">Click</button>
-    <h3 id="h3">0</h3>
-    <button id="random">Random</button>
+    <div class="h1div">
+      <h1>石はさみ</h1>
+  </div>
     <section>
       <div class="persodiv">
-        <img src="./images/ciseaux.jpg" alt="mushuu" class="ciseaux" />
-        <img src="./images/feuille.jpg" alt="génie" class="feuille" />
-        <img src="./images/pierre.jpg" alt="bob" class="pierre" />
+        <div class="ciseauxdiv">
+        <p>はさみ</p>
+        <img src="./images/ciseaux.png" alt="mushuu" class="ciseaux" />
+      </div>
+      <div class="feuillediv">
+        <p>シート</p>
+        <img src="./images/feuille.png" alt="génie" class="feuille" />
+      </div>
+      <div class="pierrediv">
+        <p>ロダン</p>
+        <img src="./images/pierre.png" alt="bob" class="pierre" />
+      </div>
       </div>
 
       <div class="imgvide">
-        <div>
-          <img src="./images/pierre.jpg" alt="move" class="imgmove" />
-          <h2 class="mychoicetxt"></h2>
+        <div class="videstartplayer">
+          <div class="mychoicediv">
+            <img src="" alt="" class="imgmove" />
+            <h2 class="mychoicetxt"></h2>
+          </div>
         </div>
-        <h2 class="result">he</h2>
-        <div>
-          <img src="./images/pierre.jpg" alt="imgrandom" class="imgrandom" />
-          <h2 class="randomchoicetxt"></h2>
+
+        <div class="resultcontainer">
+          <div>
+            <h2 class="result"></h2>
+            <div class="scorediv">
+              <div class="scorehuman"></div>
+              <div class="scorecomputer"></div>
+            </div>
+          </div>
+       
+    </div>
+        
+          <div class="computerchoicediv">
+            <img src="" alt="" class="imgrandom" />
+            <h2 class="randomchoicetxt"></h2>
+          </div>
         </div>
       </div>
+      
     </section>
+    
     <script src="index.js"></script>
   </body>
 </html>

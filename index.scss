@@ -1,10 +1,37 @@
+$color-black: #2a2b2a;
+$color-red: #690500;
+$color-redc: #a51818;
+$color-beige: #f7a342;
+$color-brown: #934b00;
+
+body {
+  background-color: $color-black;
+  margin: 0 auto;
+}
+
+.h1div {
+  background-color: $color-black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  color: $color-redc;
+  margin: 0 auto;
+  padding: 20px auto;
+  font-size: 60px;
+}
+
 .persodiv {
   margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: $color-black;
 }
-.persoimg {
-  width: 300px;
-  height: 225px;
-}
+/*---------les images--------*/
 .imgmove {
   width: 300px;
   height: 225px;
@@ -22,10 +49,86 @@
   width: 300px;
   height: 225px;
 }
+
 .imgrandom {
   width: 300px;
   height: 225px;
 }
 .imgvide {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  background-color: $color-black;
+}
+
+.videstartplayer {
+  width: 300px;
+  height: 225px;
+}
+.ciseauxdiv {
+  border: 5px $color-red solid;
+  background-color: $color-beige;
+  p {
+    text-align: center;
+    color: $color-red;
+    font-weight: bold;
+    font-size: 26px;
+  }
+}
+.feuillediv {
+  border: 5px $color-red solid;
+  background-color: $color-beige;
+  p {
+    text-align: center;
+    color: $color-red;
+    font-weight: bold;
+    font-size: 26px;
+  }
+}
+.pierrediv {
+  border: 5px $color-red solid;
+  background-color: $color-beige;
+  p {
+    text-align: center;
+    color: $color-red;
+    font-weight: bold;
+    font-size: 26px;
+  }
+}
+.mychoicetxt {
+  text-align: center;
+  color: $color-beige;
+}
+.randomchoicetxt {
+  text-align: center;
+  color: $color-beige;
+}
+
+.resultsection {
+  background-color: $color-red;
+}
+.result {
+  text-align: center;
+  color: $color-beige;
+  font-size: 30px;
+}
+.scorediv {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 150px;
+}
+.scorehuman {
+  text-align: center;
+  color: $color-beige;
+  font-size: 30px;
+}
+.scorecomputer {
+  text-align: center;
+  color: $color-beige;
+  font-size: 30px;
+}
+.resultcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
